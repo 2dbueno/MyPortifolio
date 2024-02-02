@@ -349,3 +349,9 @@ body .full-widht {
     margin: 0;
     padding: 3rem;
 }
+
+@media (max-width: 800px) {
+    .intro-content, .grid {
+        grid-template-columns: 1fr;
+    }
+}

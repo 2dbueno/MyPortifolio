@@ -54,7 +54,7 @@ a {
     position: relative;
 }
 
-.main-bg-effect{
+.main-bg-effect {
     background: #1a1a1a;
     background-size: cover;
     color: var(--white-color);
@@ -180,12 +180,12 @@ a {
 }
 
 .grid-main-heading {
-    color:rgb(238, 238, 238);
+    color: rgb(238, 238, 238);
     margin-bottom: 1rem;
 }
 
 .grid-description {
-    color:rgb(238, 238, 238);
+    color: rgb(238, 238, 238);
     padding-bottom: 5rem;
 }
 
@@ -254,7 +254,7 @@ table td,
 table th {
     padding: 1rem;
     text-align: center;
-    border: 0.1rem solid rgb(238, 238, 238);-
+    border: 0.1rem solid rgb(238, 238, 238);
 }
 
 .form-grid legend {
@@ -342,7 +342,9 @@ body .full-widht {
 }
 
 @media (max-width: 800px) {
-    .intro-content, .grid {
+
+    .intro-content,
+    .grid {
         grid-template-columns: 1fr;
     }
 }
@@ -360,5 +362,5 @@ body .full-widht {
     align-items: center;
     transform: rotate(-90deg);
     border-radius: 50%;
-    background: rgb(255, 255, 255,0.1);
+    background: rgb(255, 255, 255, 0.1);
 }

@@ -355,3 +355,19 @@ body .full-widht {
         grid-template-columns: 1fr;
     }
 }
+
+.back-to-top {
+    font-size: 25px;
+    color: aqua;
+    position: fixed;
+    display: flex;
+    bottom: 3rem;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+    border-radius: 50%;
+    background: rgb(255, 255, 255,0.1);
+}

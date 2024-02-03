@@ -47,6 +47,10 @@ a {
     color: aqua;
 }
 
+strong {
+    color: palevioletred;
+}
+
 .main-bg {
     background: #1f1f1f;
     background-size: cover;
@@ -62,7 +66,6 @@ a {
 }
 
 .section::after {
-    /* content: ""; */
     position: absolute;
     width: 250px;
     height: 250px;
@@ -84,12 +87,13 @@ a {
     right: 15%;
     top: 15%;
     background: radial-gradient(circle at 50% 50%, aqua, rgba(26, 26, 26, 0));
+    
 }
 
 .main-bg-effect::before {
     left: 10%;
     bottom: 20%;
-    background: radial-gradient(circle at 50% 50%, red, rgba(0, 0, 0, 0));
+    background: radial-gradient(circle at 50% 50%, red, rgba(0, 0, 0, 0));    
 }
 
 .white-bg {
@@ -125,7 +129,6 @@ a {
     white-space: nowrap;
     overflow: hidden;
     border-right: 1px solid;
-    /* font-family: 'Sixtyfour'; */
     font-size: 2em;
 }
 
@@ -195,25 +198,6 @@ a {
     gap: var(--gap);
     counter-reset: grid-counter;
 }
-
-/* 
-PARA ADICIONAR NÚMERO AO GRID
-.grid h3 {
-    font-size: 3rem;
-    position: relative;
-    padding-left: 5rem;
-    padding-bottom: 3rem;
-}
-.grid h3::before {
-    font-size: 3rme;
-    counter-increment: grid-counter;
-    content: counter(grid-counter);
-    position: absolute;
-    font-size: 3.4rem;
-    top: -0.3rem;
-    left: 2rem;
-} 
-*/
 
 .gallery-img {
     width: 85%;
@@ -341,14 +325,6 @@ body .full-widht {
     padding: 3rem;
 }
 
-@media (max-width: 800px) {
-
-    .intro-content,
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 .back-to-top {
     font-size: 25px;
     color: aqua;
@@ -363,4 +339,31 @@ body .full-widht {
     transform: rotate(-90deg);
     border-radius: 50%;
     background: rgb(255, 255, 255, 0.1);
+}
+
+.main-content-bout {
+    max-width: 100rem;
+    margin: auto;
+    padding: 7rem var(--gap);
+}
+
+.grid-about-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 180px;
+    counter-reset: grid-counter;
+}
+
+.grid-about h3 {
+    color: palevioletred;
+    font-size: 18px;
+}
+
+
+@media (max-width: 800px) {
+
+    .intro-content,
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }

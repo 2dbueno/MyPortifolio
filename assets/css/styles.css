@@ -87,13 +87,12 @@ strong {
     right: 15%;
     top: 15%;
     background: radial-gradient(circle at 50% 50%, aqua, rgba(26, 26, 26, 0));
-    
 }
 
 .main-bg-effect::before {
     left: 10%;
     bottom: 20%;
-    background: radial-gradient(circle at 50% 50%, red, rgba(0, 0, 0, 0));    
+    background: radial-gradient(circle at 50% 50%, red, rgba(0, 0, 0, 0));
 }
 
 .white-bg {
@@ -122,27 +121,45 @@ strong {
     min-height: 100vh;
 }
 
-.intro-content p {
+.intro-text-content p {
     font-size: 45px;
-    width: 22ch;
-    animation: typing 3s steps(22), blink .4s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 1px solid;
+    width: 0;
+    visibility: hidden;
+    animation: typing 3s steps(80) forwards, blink .4s step-end infinite alternate;
     font-size: 2em;
+    white-space: nowrap;
+    margin-right: 3px;
+    overflow: hidden;
+}
+
+.intro-text-content p:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.intro-text-content p:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.intro-text-content p:nth-child(3) {
+    animation-delay: 3s;
 }
 
 @keyframes typing {
     from {
-        width: 0
+        width: 0;
+    }
+    to {
+        width: 100%;
+        visibility: visible;
     }
 }
 
 @keyframes blink {
     50% {
-        border-color: transparent
+        border-color: transparent;
     }
 }
+
 
 .intro-text-content h2 {
     font-size: 40px;
@@ -183,13 +200,8 @@ strong {
 }
 
 .grid-main-heading {
-    color: rgb(238, 238, 238);
     margin-bottom: 1rem;
-}
-
-.grid-description {
-    color: rgb(238, 238, 238);
-    padding-bottom: 5rem;
+    text-align: center;
 }
 
 .grid {
@@ -350,7 +362,7 @@ body .full-widht {
 .grid-about-div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 180px;
+    gap: 240px;
     counter-reset: grid-counter;
 }
 
@@ -359,9 +371,36 @@ body .full-widht {
     font-size: 18px;
 }
 
+.icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 45px;
+    flex-wrap: wrap;
+}
+
+.icons li {
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    flex-grow: 1;
+    height: 8.5rem;
+    position: relative;
+    border-radius: 10px;
+    margin: 0.9rem;
+
+}
+
+.icons li:hover {
+    border: 0.1rem solid palevioletred;
+    transition: transform 0.6s;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 @media (max-width: 800px) {
-
     .intro-content,
     .grid {
         grid-template-columns: 1fr;

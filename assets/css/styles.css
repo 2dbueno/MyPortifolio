@@ -288,9 +288,8 @@ body .full-width {
     counter-reset: grid-counter;
 }
 
-.grid-about h3 {
-    color: palevioletred;
-    font-size: 18px;
+.grid-about p {
+    text-align: justify;
 }
 
 .social-icons-container {
@@ -411,6 +410,10 @@ body .full-width {
     .top3-content h2 {
         font-size: 50px;
     }
+
+    .grid-about p {
+        text-align: center;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -426,6 +429,10 @@ body .full-width {
         align-items: center;
         gap: 1rem;
     }
+
+    .grid-about p {
+        text-align: center;
+    }   
 }
 
 @media (min-width: 1025px) {
@@ -435,6 +442,10 @@ body .full-width {
 
     .icons li {
         width: 20%;
+    }
+    
+    .grid-about p {
+        text-align: center;
     }
 }
 

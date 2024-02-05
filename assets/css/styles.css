@@ -148,6 +148,7 @@ strong {
     from {
         width: 0;
     }
+
     to {
         width: 100%;
         visibility: visible;
@@ -176,6 +177,44 @@ strong {
     max-width: 70%;
     height: auto;
 }
+
+.social-icon {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #1A1A1A;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    font-size: 25px;
+    color: #fff;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.instagram:hover {
+    background-color: #cc39a4;
+    color: white;
+}
+
+.github:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    box-shadow: 0 0 10px rgba(54, 54, 54, 0.8);
+}
+
+.linkedin:hover {
+    background-color: #0077b5;
+    color: white;
+}
+
 
 .top3-content {
     color: rgb(238, 238, 238);
@@ -211,116 +250,9 @@ strong {
     counter-reset: grid-counter;
 }
 
-.gallery-img {
-    width: 85%;
-    max-width: 36rem;
-    max-height: 36rem;
-}
-
-.gallery-img img {
-    width: 88.5%;
-    max-width: 36rem;
-    max-height: 36rem;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 8px;
-}
-
-.gallery-img:hover img {
-    transform: scale(1.2);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-}
-
-.responsive-table {
-    overflow: hidden;
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table caption {
-    font-style: italic;
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-}
-
-table td,
-table th {
-    padding: 1rem;
-    text-align: center;
-    border: 0.1rem solid rgb(238, 238, 238);
-}
-
-.form-grid legend {
-    font-style: italic;
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
-}
-
-.contact-form {
-    grid-column: span 2;
-}
-
-.contact-form .form-grid {
-    border: none;
-    display: flex;
-    flex-flow: row wrap;
-    gap: var(--gap)
-}
-
-.form-group {
-    flex: 1 1 32rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.6rem;
-}
-
-.form-group input,
-.form-group textarea {
-    border: none;
-    background: var(--white-color);
-    padding: 0.8rem 1.6rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    font-size: 1.6rem;
-    outline: none;
-    transition: background 0.3s, box-shadow 0.3s;
-}
-
 body .full-widht {
     width: 100%;
     flex: 1 1 100%;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    box-shadow: 0 0 15px var(--placeholder-color);
-}
-
-.form-group button {
-    font-family: 'Ubuntu', sans-serif;
-    padding: 1.5rem 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border: 3px solid #4B3CFF;
-    background: #4B3CFF;
-    color: var(--white-color);
-    border-radius: 35px;
-    cursor: pointer;
-    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-.form-group button:hover {
-    transform: scale(1.2);
-}
-
-
-.form-group ::placeholder {
-    color: var(--placeholder-color);
 }
 
 .credit {
@@ -371,6 +303,11 @@ body .full-widht {
     font-size: 18px;
 }
 
+.social-icons-container {
+    margin-top: 50px;
+    gap: 2.5em;
+}
+
 .icons {
     list-style: none;
     padding: 0;
@@ -378,6 +315,8 @@ body .full-widht {
     display: flex;
     font-size: 45px;
     flex-wrap: wrap;
+    gap: 10px;
+
 }
 
 .icons li {
@@ -390,8 +329,6 @@ body .full-widht {
     height: 8.5rem;
     position: relative;
     border-radius: 10px;
-    margin: 0.9rem;
-
 }
 
 .icons li:hover {
@@ -400,7 +337,51 @@ body .full-widht {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+.social-icons-container {
+    display: flex;
+    gap: 4.4em;
+}
+
+.social-icon {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #1A1A1A;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    font-size: 25px;
+    color: #fff;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.instagram:hover {
+    background-color: #cc39a4;
+    color: white;
+}
+
+.github:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    box-shadow: 0 0 10px rgba(54, 54, 54, 0.8);
+}
+
+.linkedin:hover {
+    background-color: #0077b5;
+    color: white;
+}
+
+
 @media (max-width: 800px) {
+
     .intro-content,
     .grid {
         grid-template-columns: 1fr;

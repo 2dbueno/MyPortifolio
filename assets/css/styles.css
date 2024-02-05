@@ -65,17 +65,9 @@ strong {
     position: relative;
 }
 
-.section::after {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    filter: blur(70px);
-    border-radius: 0 50%;
-}
-
+.section::after,
 .main-bg-effect::after,
 .main-bg-effect::before {
-    content: "";
     position: absolute;
     width: 250px;
     height: 250px;
@@ -161,7 +153,6 @@ strong {
     }
 }
 
-
 .intro-text-content h2 {
     font-size: 40px;
 }
@@ -215,7 +206,6 @@ strong {
     color: white;
 }
 
-
 .top3-content {
     color: rgb(238, 238, 238);
     max-width: 64rem;
@@ -250,7 +240,7 @@ strong {
     counter-reset: grid-counter;
 }
 
-body .full-widht {
+body .full-width {
     width: 100%;
     flex: 1 1 100%;
 }
@@ -316,7 +306,6 @@ body .full-widht {
     font-size: 45px;
     flex-wrap: wrap;
     gap: 10px;
-
 }
 
 .icons li {
@@ -380,10 +369,77 @@ body .full-widht {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
+    body {
+        font-size: 80%;
+    }
 
     .intro-content,
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    .grid-about-div {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .icons li {
+        width: 45%;
+        height: 6rem;
+    }
+
+    .social-icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .intro-img img {
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .icons li {
+        width: 70%;
+        height: 8.5rem;
+    }
+
+    .top3-content h2 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .icons li {
+        width: 30%;
+    }
+
+    .grid-skills,
+    .grid-main-heading2 {
+        font-size: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .intro-content {
+        gap: 4rem;
+    }
+
+    .icons li {
+        width: 20%;
+    }
+}
+
+@media (max-width: 800px) {
+    .intro-text-content p {
+        font-size: 1.5em;
     }
 }

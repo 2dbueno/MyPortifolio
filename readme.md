@@ -1,7 +1,15 @@
-<h1 align="center"> Meu portiólio </h1>
+# Personal Portfolio 🌟
 
-<p align="center"> Esté projeto foi criado para colocar meus conhecimentos em HTML e CSS em prática.</p>
+Welcome to my personal portfolio! This is a simple project, created using only HTML and CSS, with the aim of showcasing some of my skills and projects.
 
-<p align="center">
-<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
-</p>
+## Project Structure 📂
+
+The project is organized as follows:
+
+- **index.html:** Initial page that provides a brief introduction about me and displays the main projects.
+- **styles.css:** Style sheet that defines the appearance and layout of all pages.
+- **img.css:** Image folder used in the project.
+
+## How to View 🚀
+
+To view this portfolio, simply click [here](https://2dbueno.github.io/MyPortifolio/).
